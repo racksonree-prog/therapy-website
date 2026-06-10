@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Therapy Practice | Counseling & Support</title>
+  <meta name="description" content="Modern therapy website for individual, couples, and family counseling." />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="#" class="logo">Therapy Practice</a>
+
+    <button class="menu-button" id="menuButton">Menu</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Warm, grounded therapy</p>
+        <h1>Support for healing, clarity, and connection.</h1>
+        <p class="hero-text">
+          Individual, couples, and family therapy in a calm, welcoming space.
+          Rooted in compassion, honesty, and practical care.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="button primary">Schedule a Consultation</a>
+          <a href="#services" class="button secondary">View Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section two-column">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>A peaceful place to begin again.</h2>
+      </div>
+      <div>
+        <p>
+          Therapy can help you slow down, understand what you are carrying,
+          and move toward healthier relationships with yourself and others.
+        </p>
+        <p>
+          This space is designed to feel safe, steady, and honest — a place
+          where growth can happen at a pace that feels human.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <p class="eyebrow">Services</p>
+      <h2>How we can work together</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Individual Therapy</h3>
+          <p>Anxiety, life transitions, grief, identity, stress, and personal growth.</p>
+        </div>
+
+        <div class="card">
+          <h3>Couples Therapy</h3>
+          <p>Communication, conflict, trust, emotional connection, and repair.</p>
+        </div>
+
+        <div class="card">
+          <h3>Family Therapy</h3>
+          <p>Support for family dynamics, parenting, transitions, and understanding.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach" class="section approach">
+      <div class="approach-box">
+        <p class="eyebrow">Approach</p>
+        <h2>Therapy that feels steady, personal, and practical.</h2>
+        <p>
+          Sessions are collaborative and compassionate. The goal is not to
+          simply talk about problems, but to understand patterns, build tools,
+          and create meaningful movement toward healing.
+        </p>
+      </div>
+    </section>
+
+    <section class="section details">
+      <div>
+        <h3>Session Options</h3>
+        <p>In-person and telehealth options available.</p>
+      </div>
+
+      <div>
+        <h3>Who We Help</h3>
+        <p>Adults, couples, families, and people navigating change.</p>
+      </div>
+
+      <div>
+        <h3>Next Step</h3>
+        <p>Reach out to schedule a consultation and see if it feels like a good fit.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Ready to take the next step?</h2>
+      <p>
+        Reach out to schedule a free consultation or ask a question about therapy services.
+      </p>
+
+      <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <button type="submit" class="button primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Therapy Practice. All rights reserved.</p>
+    <p class="small">
+      If you are experiencing a mental health emergency, call 988 or go to your nearest emergency room.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
