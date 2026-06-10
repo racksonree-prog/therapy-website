@@ -79,9 +79,15 @@ a {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  font-size: 28px;
-  color: var(--forest);
+}
+
+.logo img {
+  width: 82px;
+  height: auto;
+  display: block;
 }
 
 .nav-links {
