@@ -1,13 +1,13 @@
 :root {
-  --cream: #f7f1e8;
-  --white: #fffaf3;
-  --sand: #e5d4c2;
-  --sage: #8f9d83;
-  --sage-dark: #5f6f57;
-  --ocean: #6f95a5;
-  --text: #2d332d;
+  --cream: #f8f3eb;
+  --white: #fffaf4;
+  --sand: #dfcdb8;
+  --sage: #8a9a7b;
+  --sage-dark: #55654d;
+  --forest: #283328;
+  --ocean: #6f94a1;
   --muted: #687064;
-  --blue-soft: #dfe8e5;
+  --blue-soft: #dfe9e7;
 }
 
 * {
@@ -21,7 +21,7 @@ html {
 body {
   margin: 0;
   background: var(--cream);
-  color: var(--text);
+  color: var(--forest);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -34,16 +34,16 @@ h3,
 }
 
 h1 {
-  max-width: 850px;
-  margin: 0 0 24px;
-  font-size: clamp(52px, 9vw, 104px);
-  line-height: 0.92;
-  letter-spacing: -2px;
+  max-width: 920px;
+  margin: 0 0 26px;
+  font-size: clamp(54px, 9vw, 108px);
+  line-height: 0.9;
+  letter-spacing: -3px;
 }
 
 h2 {
   margin: 0 0 24px;
-  font-size: clamp(38px, 6vw, 68px);
+  font-size: clamp(38px, 5vw, 66px);
   line-height: 1;
   letter-spacing: -1px;
 }
@@ -71,14 +71,16 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 7%;
-  background: rgba(247, 241, 232, 0.85);
-  backdrop-filter: blur(12px);
+  padding: 22px 7%;
+  background: rgba(248, 243, 235, 0.86);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(223, 205, 184, 0.45);
 }
 
 .logo {
   text-decoration: none;
   font-size: 28px;
+  color: var(--forest);
 }
 
 .nav-links {
@@ -89,7 +91,7 @@ a {
 .nav-links a {
   text-decoration: none;
   font-size: 15px;
-  color: var(--text);
+  color: var(--forest);
 }
 
 .menu-button {
@@ -98,7 +100,7 @@ a {
   background: var(--white);
   border-radius: 999px;
   padding: 10px 16px;
-  color: var(--text);
+  color: var(--forest);
 }
 
 .hero {
@@ -107,14 +109,19 @@ a {
   align-items: center;
   padding: 160px 7% 90px;
   background:
-    linear-gradient(rgba(247, 241, 232, 0.35), rgba(247, 241, 232, 0.95)),
-    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80");
+    linear-gradient(
+      90deg,
+      rgba(248, 243, 235, 0.96) 0%,
+      rgba(248, 243, 235, 0.82) 45%,
+      rgba(248, 243, 235, 0.35) 100%
+    ),
+    url("kasha-headshot.webp");
   background-size: cover;
-  background-position: center;
+  background-position: center right;
 }
 
 .hero-content {
-  max-width: 900px;
+  max-width: 800px;
 }
 
 .eyebrow {
@@ -127,7 +134,7 @@ a {
 }
 
 .hero-text {
-  max-width: 660px;
+  max-width: 640px;
   font-size: 20px;
 }
 
@@ -154,21 +161,47 @@ a {
   color: white;
 }
 
+.button.primary:hover {
+  background: var(--sage-dark);
+}
+
 .button.secondary {
-  background: rgba(255, 250, 243, 0.85);
-  color: var(--text);
+  background: rgba(255, 250, 244, 0.88);
+  color: var(--forest);
   border: 1px solid var(--sand);
 }
 
 .section {
-  padding: 100px 7%;
+  padding: 105px 7%;
 }
 
-.two-column {
+.about-grid,
+.location-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 70px;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px;
+  align-items: center;
   background: var(--white);
+}
+
+.location-grid {
+  grid-template-columns: 1fr 1fr;
+  background: var(--cream);
+}
+
+.image-card {
+  border-radius: 34px;
+  overflow: hidden;
+  box-shadow: 0 24px 70px rgba(40, 51, 40, 0.13);
+  background: var(--sand);
+}
+
+.image-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 640px;
+  object-fit: cover;
 }
 
 .cards {
@@ -179,7 +212,7 @@ a {
 }
 
 .card {
-  min-height: 260px;
+  min-height: 245px;
   padding: 36px;
   border: 1px solid var(--sand);
   border-radius: 34px;
@@ -189,34 +222,23 @@ a {
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 50px rgba(45, 51, 45, 0.08);
+  box-shadow: 0 20px 50px rgba(40, 51, 40, 0.08);
 }
 
 .approach {
   background:
-    linear-gradient(rgba(223, 232, 229, 0.8), rgba(223, 232, 229, 0.9)),
-    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80");
+    linear-gradient(rgba(223, 233, 231, 0.88), rgba(223, 233, 231, 0.9)),
+    url("building.png");
   background-size: cover;
   background-position: center;
 }
 
 .approach-box {
-  max-width: 760px;
-  background: rgba(255, 250, 243, 0.9);
+  max-width: 820px;
+  background: rgba(255, 250, 244, 0.94);
   border: 1px solid var(--sand);
-  border-radius: 36px;
-  padding: 48px;
-}
-
-.details {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-}
-
-.details div {
-  border-top: 1px solid var(--sand);
-  padding-top: 26px;
+  border-radius: 38px;
+  padding: 52px;
 }
 
 .contact {
@@ -230,39 +252,15 @@ a {
   margin-right: auto;
 }
 
-.contact-form {
-  max-width: 620px;
-  margin: 42px auto 0;
-  display: grid;
-  gap: 18px;
-  text-align: left;
-}
-
-label {
-  display: grid;
-  gap: 8px;
-  color: var(--text);
+.email-text {
+  margin-top: 22px;
   font-weight: 700;
-}
-
-input,
-textarea {
-  width: 100%;
-  border: 1px solid var(--sand);
-  border-radius: 18px;
-  background: var(--white);
-  padding: 16px;
-  font: inherit;
-  color: var(--text);
-}
-
-textarea {
-  resize: vertical;
+  color: var(--forest);
 }
 
 .footer {
   padding: 34px 7%;
-  background: var(--text);
+  background: var(--forest);
   text-align: center;
 }
 
@@ -277,7 +275,7 @@ textarea {
   font-size: 13px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .site-header {
     position: relative;
     padding: 20px;
@@ -308,20 +306,28 @@ textarea {
 
   .hero {
     min-height: auto;
-    padding: 90px 20px;
+    padding: 95px 20px;
+    background:
+      linear-gradient(
+        rgba(248, 243, 235, 0.9),
+        rgba(248, 243, 235, 0.96)
+      ),
+      url("kasha-headshot.webp");
+    background-size: cover;
+    background-position: center top;
   }
 
   .section {
-    padding: 72px 20px;
+    padding: 76px 20px;
   }
 
-  .two-column,
-  .cards,
-  .details {
+  .about-grid,
+  .location-grid,
+  .cards {
     grid-template-columns: 1fr;
   }
 
   .approach-box {
-    padding: 32px;
+    padding: 34px;
   }
 }
