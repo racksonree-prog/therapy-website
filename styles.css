@@ -1,13 +1,14 @@
 :root {
-  --cream: #f8f3eb;
+  --cream: #f8f2ea;
   --white: #fffaf4;
   --sand: #dfcdb8;
-  --sage: #8a9a7b;
-  --sage-dark: #55654d;
+  --sand-light: #efe1d2;
+  --seafoam: #dce9e5;
+  --ocean: #6e96a7;
+  --ocean-dark: #486d7c;
+  --sage: #8c9a7c;
   --forest: #283328;
-  --ocean: #6f94a1;
-  --muted: #687064;
-  --blue-soft: #dfe9e7;
+  --muted: #66706b;
 }
 
 * {
@@ -34,9 +35,9 @@ h3,
 }
 
 h1 {
-  max-width: 920px;
+  max-width: 950px;
   margin: 0 0 26px;
-  font-size: clamp(54px, 9vw, 108px);
+  font-size: clamp(52px, 9vw, 108px);
   line-height: 0.9;
   letter-spacing: -3px;
 }
@@ -72,8 +73,8 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 22px 7%;
-  background: rgba(248, 243, 235, 0.86);
-  backdrop-filter: blur(14px);
+  background: rgba(248, 242, 234, 0.84);
+  backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(223, 205, 184, 0.45);
 }
 
@@ -111,22 +112,22 @@ a {
   background:
     linear-gradient(
       90deg,
-      rgba(248, 243, 235, 0.96) 0%,
-      rgba(248, 243, 235, 0.82) 45%,
-      rgba(248, 243, 235, 0.35) 100%
+      rgba(248, 242, 234, 0.97) 0%,
+      rgba(248, 242, 234, 0.82) 43%,
+      rgba(248, 242, 234, 0.28) 100%
     ),
-    url("kasha-headshot.webp");
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=80");
   background-size: cover;
-  background-position: center right;
+  background-position: center;
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 820px;
 }
 
 .eyebrow {
   margin: 0 0 18px;
-  color: var(--ocean);
+  color: var(--ocean-dark);
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 13px;
@@ -134,7 +135,7 @@ a {
 }
 
 .hero-text {
-  max-width: 640px;
+  max-width: 650px;
   font-size: 20px;
 }
 
@@ -157,16 +158,16 @@ a {
 }
 
 .button.primary {
-  background: var(--sage);
+  background: var(--ocean);
   color: white;
 }
 
 .button.primary:hover {
-  background: var(--sage-dark);
+  background: var(--ocean-dark);
 }
 
 .button.secondary {
-  background: rgba(255, 250, 244, 0.88);
+  background: rgba(255, 250, 244, 0.9);
   color: var(--forest);
   border: 1px solid var(--sand);
 }
@@ -227,8 +228,11 @@ a {
 
 .approach {
   background:
-    linear-gradient(rgba(223, 233, 231, 0.88), rgba(223, 233, 231, 0.9)),
-    url("building.png");
+    linear-gradient(
+      rgba(220, 233, 229, 0.78),
+      rgba(220, 233, 229, 0.88)
+    ),
+    url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2400&q=80");
   background-size: cover;
   background-position: center;
 }
@@ -243,7 +247,14 @@ a {
 
 .contact {
   text-align: center;
-  background: var(--blue-soft);
+  background:
+    linear-gradient(
+      rgba(220, 233, 229, 0.92),
+      rgba(220, 233, 229, 0.92)
+    ),
+    url("https://images.unsplash.com/photo-1471922694854-ff1b63b20054?auto=format&fit=crop&w=2400&q=80");
+  background-size: cover;
+  background-position: center;
 }
 
 .contact p {
@@ -309,12 +320,12 @@ a {
     padding: 95px 20px;
     background:
       linear-gradient(
-        rgba(248, 243, 235, 0.9),
-        rgba(248, 243, 235, 0.96)
+        rgba(248, 242, 234, 0.9),
+        rgba(248, 242, 234, 0.96)
       ),
-      url("kasha-headshot.webp");
+      url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80");
     background-size: cover;
-    background-position: center top;
+    background-position: center;
   }
 
   .section {
