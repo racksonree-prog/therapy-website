@@ -342,3 +342,26 @@ a {
     padding: 34px;
   }
 }
+.crisis-resources {
+max-width: 700px;
+margin: 30px auto 0;
+padding-top: 25px;
+border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.crisis-resources h3 {
+color: var(--cream);
+margin-bottom: 18px;
+font-size: 24px;
+}
+
+.crisis-resources p {
+color: var(--cream);
+margin: 10px 0;
+font-size: 15px;
+line-height: 1.6;
+}
+
+.crisis-resources strong {
+color: white;
+}
