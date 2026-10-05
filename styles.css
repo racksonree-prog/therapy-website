@@ -1,6 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
-
 /* =========================================
    KASHA LUCKNER THERAPY
    Refined Coastal Design
@@ -18,10 +15,10 @@
   --forest: #283328;
   --muted: #66706b;
 
-  --heading-font: 'Cormorant Garamond', Georgia, serif;
-  --body-font: 'DM Sans', Arial, sans-serif;
+  --heading-font: Georgia, "Times New Roman", serif;
+  --body-font: Arial, Helvetica, sans-serif;
 
-  --section-spacing: 88px;
+  --section-spacing: 68px;
   --content-width: 1320px;
 }
 
@@ -50,27 +47,27 @@ h1,
 h2,
 h3 {
   font-family: var(--heading-font);
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.025em;
 }
 
 h1 {
   max-width: 850px;
   margin: 0 0 25px;
-  font-size: clamp(54px, 6.5vw, 92px);
-  line-height: 0.99;
+  font-size: clamp(48px, 6vw, 82px);
+  line-height: 1.08;
 }
 
 h2 {
   margin: 0 0 25px;
-  font-size: clamp(40px, 4.5vw, 62px);
-  line-height: 1.04;
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1.13;
 }
 
 h3 {
   margin: 0 0 12px;
-  font-size: 29px;
-  line-height: 1.12;
+  font-size: 26px;
+  line-height: 1.2;
 }
 
 p {
@@ -137,9 +134,9 @@ img {
 
 .brand-name strong {
   font-family: var(--heading-font);
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 0.9;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.1;
   white-space: nowrap;
 }
 
@@ -366,8 +363,8 @@ img {
   text-align: center;
   color: var(--ocean-dark);
   font-family: var(--heading-font);
-  font-size: 23px;
-  font-weight: 600;
+  font-size: 21px;
+  font-weight: 500;
 }
 
 /* =========================================
@@ -380,6 +377,8 @@ img {
 
 .expect-section {
   background: var(--seafoam);
+  padding-top: 56px;
+  padding-bottom: 48px;
 }
 
 .cards {
@@ -408,9 +407,9 @@ img {
 .card h3 {
   margin-bottom: 10px;
   font-family: var(--heading-font);
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 1.05;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .card p {
@@ -428,6 +427,11 @@ img {
 ========================================= */
 
 .approach {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
   background:
     linear-gradient(
       rgba(220, 233, 229, 0.78),
@@ -439,7 +443,9 @@ img {
 }
 
 .approach-box {
-  max-width: 760px;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
   background: rgba(255, 250, 244, 0.96);
   border: 1px solid var(--sand);
   border-radius: 18px;
@@ -447,7 +453,7 @@ img {
 }
 
 .approach-box h2 {
-  max-width: 650px;
+  max-width: none;
 }
 
 .approach-box p:last-child {
@@ -529,7 +535,12 @@ img {
 ========================================= */
 
 .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  padding-top: 66px;
+  padding-bottom: 66px;
   background:
     linear-gradient(
       rgba(220, 233, 229, 0.92),
@@ -538,6 +549,17 @@ img {
     url("https://images.unsplash.com/photo-1471922694854-ff1b63b20054?auto=format&fit=crop&w=2400&q=80");
   background-size: cover;
   background-position: center;
+}
+
+.contact h2 {
+  width: 100%;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact > .eyebrow {
+  width: 100%;
 }
 
 .contact p {
@@ -551,6 +573,8 @@ img {
   flex-direction: column;
   gap: 10px;
   margin-top: 25px;
+  align-items: center;
+  width: 100%;
 }
 
 .contact-details a {
@@ -582,8 +606,8 @@ img {
 
 .footer-brand {
   font-family: var(--heading-font);
-  font-size: 30px !important;
-  font-weight: 600;
+  font-size: 27px !important;
+  font-weight: 500;
   margin-bottom: 13px !important;
 }
 
@@ -704,6 +728,16 @@ img {
   .approach-box {
     padding: 35px;
   }
+
+  .expect-section {
+    padding-top: 55px;
+    padding-bottom: 45px;
+  }
+
+  .approach {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -792,6 +826,18 @@ img {
 
   .approach-box {
     padding: 26px;
+  }
+
+  .approach {
+    padding: 32px 20px;
+  }
+
+  .expect-section {
+    padding: 46px 20px 38px;
+  }
+
+  .contact {
+    padding: 50px 20px;
   }
 
   .contact-details a {
