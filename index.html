@@ -1,32 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Kasha Luckner, MS, LPC | Wichita Counseling & Therapy</title>
-  <meta
-    name="description"
-    content="Professional counseling in Wichita, Kansas. Kasha Luckner, MS, LPC specializes in trauma, anxiety, cancer survivorship, ADHD, parenting support, and life transitions."
-  />
+  <title>Kasha Luckner Therapy | Counseling in Wichita, Kansas</title>
+  <meta name="description" content="Kasha Luckner Therapy offers compassionate counseling in Wichita, Kansas, for individuals ages 12 and older. Explore trauma recovery, anxiety, cancer survivorship, ADHD, and life transitions." />
+  <link rel="canonical" href="https://lucknerlpc.com/" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Social media link previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Kasha Luckner Therapy" />
+  <meta property="og:title" content="Kasha Luckner Therapy | Wichita Counseling" />
+  <meta property="og:description" content="Compassionate counseling in Wichita, Kansas. In-person and telehealth appointments with Kasha Luckner, MS, LPC." />
+  <meta property="og:url" content="https://lucknerlpc.com/" />
+  <meta property="og:image" content="https://lucknerlpc.com/kasha-headshot.png" />
+  <meta property="og:image:alt" content="Kasha Luckner, licensed professional counselor" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kasha Luckner Therapy" />
+  <meta name="twitter:description" content="Compassionate counseling in Wichita, Kansas." />
+  <meta name="twitter:image" content="https://lucknerlpc.com/kasha-headshot.png" />
+
   <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="site-header">
-    <a href="#" class="logo">
-      <img src="logo.png" alt="Kasha Luckner, MS, LPC logo" />
+    <a href="#" class="logo" aria-label="Kasha Luckner Therapy home">
+      <img src="logo.png" alt="" />
+      <span class="brand-name">
+        <strong>Kasha Luckner</strong>
+        <span>THERAPY</span>
+      </span>
     </a>
 
-    <button class="menu-button" id="menuButton">Menu</button>
+    <button
+      class="menu-button"
+      id="menuButton"
+      type="button"
+      aria-label="Toggle navigation"
+      aria-controls="navLinks"
+      aria-expanded="false"
+    >
+      Menu
+    </button>
 
-    <nav class="nav-links" id="navLinks">
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#expect">What to Expect</a>
       <a href="#faith">Approach</a>
+      <a href="#insurance">Insurance</a>
       <a href="#location">Location</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -34,14 +61,14 @@
 
   <main>
     <section class="hero">
-      <video class="hero-video" autoplay muted loop playsinline>
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata">
         <source src="ocean.mp4" type="video/mp4" />
       </video>
 
       <div class="hero-overlay"></div>
 
       <div class="hero-content">
-        <p class="eyebrow">Counseling in Wichita, Kansas</p>
+        <p class="eyebrow">Kasha Luckner Therapy · Wichita, Kansas</p>
 
         <h1>Finding hope and healing through life's difficult seasons.</h1>
 
@@ -54,6 +81,10 @@
           <a href="#contact" class="button primary">Contact Kasha</a>
           <a href="#services" class="button secondary">View Services</a>
         </div>
+
+        <p class="hero-details">
+          Counseling for ages 12+ · In-person and telehealth
+        </p>
       </div>
     </section>
 
@@ -87,19 +118,25 @@
         </p>
       </div>
 
-      <div class="image-card">
-        <img src="kasha-headshot.webp" alt="Kasha Luckner, MS, LPC" />
+      <div class="headshot-wrap">
+        <div class="image-card headshot-card">
+          <img
+            src="kasha-headshot.png"
+            alt="Kasha Luckner, MS, LPC, smiling in her counseling office"
+            loading="lazy"
+          />
+        </div>
+        <p class="photo-caption">Kasha Luckner, MS, LPC</p>
       </div>
     </section>
 
-    <section id="services" class="section">
-      <p class="eyebrow">Services</p>
-
+    <section id="services" class="section services-section">
+      <p class="eyebrow">Kasha Luckner Therapy</p>
       <h2>Areas of Focus</h2>
 
       <div class="cards">
         <div class="card">
-          <h3>Trauma & Healing</h3>
+          <h3>Trauma &amp; Healing</h3>
           <p>
             A steady space to process painful experiences, rebuild safety,
             and move toward peace.
@@ -107,7 +144,7 @@
         </div>
 
         <div class="card">
-          <h3>Anxiety & Depression</h3>
+          <h3>Anxiety &amp; Depression</h3>
           <p>
             Practical support for worry, sadness, overwhelm, motivation,
             and emotional regulation.
@@ -139,7 +176,7 @@
         </div>
 
         <div class="card">
-          <h3>Parenting & Family Support</h3>
+          <h3>Parenting &amp; Family Support</h3>
           <p>
             Encouragement and tools for parents facing family,
             relationship, and life challenges.
@@ -148,15 +185,14 @@
       </div>
     </section>
 
-    <section id="expect" class="section">
+    <section id="expect" class="section expect-section">
       <p class="eyebrow">What to Expect</p>
-
       <h2>Your Counseling Experience</h2>
 
       <div class="cards">
         <div class="card">
-          <h3>Ages 14+</h3>
-          <p>I work with individuals age 14 and older.</p>
+          <h3>Ages 12+</h3>
+          <p>I work with individuals age 12 and older.</p>
         </div>
 
         <div class="card">
@@ -173,33 +209,71 @@
 
     <section id="faith" class="section approach">
       <div class="approach-box">
-        <p class="eyebrow">Approach</p>
-
+        <p class="eyebrow">Our Approach</p>
         <h2>Counseling is a partnership.</h2>
 
         <p>
-          My approach to counseling is collaborative, genuine, and tailored to
-          your unique needs. I use a Person-Centered approach as well as
-          Cognitive Behavioral Therapy (CBT).
+          My approach to counseling is collaborative, genuine, and tailored
+          to your unique needs. I use a Person-Centered approach as well
+          as Emotionally Focused Therapy (EFT).
         </p>
 
         <p>
-          Together, we will build on your strengths, explore obstacles, and work
-          toward the goals that matter most to you. My hope is that you leave
-          each session feeling supported, encouraged, and equipped with tools to
-          move forward with confidence.
+          Together, we will build on your strengths, explore obstacles,
+          and work toward the goals that matter most to you. My hope
+          is that you leave each session feeling supported, encouraged,
+          and equipped with tools to move forward with confidence.
         </p>
       </div>
     </section>
 
+    <section id="insurance" class="section insurance-section">
+      <p class="eyebrow">Insurance &amp; Payment</p>
+      <h2>Insurance Accepted</h2>
+
+      <p class="insurance-intro">
+        Kasha Luckner Therapy accepts the following insurance plans:
+      </p>
+
+      <div class="insurance-grid">
+        <div class="insurance-item">
+          <span class="insurance-number">01</span>
+          <h3>Aetna</h3>
+        </div>
+
+        <div class="insurance-item">
+          <span class="insurance-number">02</span>
+          <h3>Blue Cross Blue Shield</h3>
+        </div>
+
+        <div class="insurance-item">
+          <span class="insurance-number">03</span>
+          <h3>Healthy Blue Medicaid</h3>
+        </div>
+      </div>
+
+      <p class="insurance-note">
+        Insurance coverage and benefits vary by plan. Please contact
+        your insurance provider to confirm your specific coverage
+        before scheduling.
+      </p>
+
+      <a href="#contact" class="text-link">
+        Questions about insurance? Contact Kasha →
+      </a>
+    </section>
+
     <section id="location" class="section location-grid">
       <div class="image-card">
-        <img src="building.png" alt="Old Town Center Building" />
+        <img
+          src="building.png"
+          alt="Building where Kasha Luckner Therapy is located"
+          loading="lazy"
+        />
       </div>
 
       <div>
-        <p class="eyebrow">Location</p>
-
+        <p class="eyebrow">Visit Kasha Luckner Therapy</p>
         <h2>Office Directions</h2>
 
         <p>
@@ -217,25 +291,32 @@
     </section>
 
     <section id="contact" class="section contact">
-      <p class="eyebrow">Contact</p>
-
+      <p class="eyebrow">Get in Touch</p>
       <h2>Ready to take the next step?</h2>
 
       <p>
-        Contact me today to schedule a free 15-minute consultation.
+        Contact Kasha Luckner Therapy today to schedule a
+        free 15-minute consultation.
       </p>
 
       <a class="button primary" href="mailto:Kasha@ictcounseling.com">
         Email Kasha
       </a>
 
-      <p class="email-text">Kasha@ictcounseling.com</p>
-      <p class="email-text">(316) 247-2054</p>
+      <div class="contact-details">
+        <a href="mailto:Kasha@ictcounseling.com">
+          Kasha@ictcounseling.com
+        </a>
+        <a href="tel:+13162472054">
+          (316) 247-2054
+        </a>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Kasha Luckner, MS, LPC. All rights reserved.</p>
+    <p class="footer-brand">Kasha Luckner Therapy</p>
+    <p>© 2026 Kasha Luckner Therapy. All rights reserved.</p>
 
     <div class="crisis-resources">
       <h3>Crisis Resources</h3>
@@ -243,8 +324,8 @@
       <p>If you are experiencing an emergency, please call 911.</p>
 
       <p>
-        National Suicide Prevention Hotline:
-        <strong>1 (800) 273-8255</strong>
+        Suicide &amp; Crisis Lifeline:
+        <strong>Call or text 988</strong>
       </p>
 
       <p>
