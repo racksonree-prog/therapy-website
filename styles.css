@@ -1,6 +1,7 @@
+
 /* =========================================
    KASHA LUCKNER THERAPY
-   Refined Coastal Design
+   Coastal Website Styles
 ========================================= */
 
 :root {
@@ -18,13 +19,11 @@
   --heading-font: Georgia, "Times New Roman", serif;
   --body-font: Arial, Helvetica, sans-serif;
 
-  --section-spacing: 68px;
+  --section-spacing: 88px;
   --content-width: 1320px;
 }
 
-/* =========================================
-   GLOBAL
-========================================= */
+/* GLOBAL */
 
 * {
   box-sizing: border-box;
@@ -54,19 +53,19 @@ h3 {
 h1 {
   max-width: 850px;
   margin: 0 0 25px;
-  font-size: clamp(48px, 6vw, 82px);
-  line-height: 1.08;
+  font-size: clamp(50px, 6.5vw, 92px);
+  line-height: 1.04;
 }
 
 h2 {
   margin: 0 0 25px;
-  font-size: clamp(36px, 4vw, 56px);
-  line-height: 1.13;
+  font-size: clamp(36px, 4.5vw, 62px);
+  line-height: 1.1;
 }
 
 h3 {
   margin: 0 0 12px;
-  font-size: 26px;
+  font-size: 28px;
   line-height: 1.2;
 }
 
@@ -89,9 +88,7 @@ img {
   color: var(--forest);
 }
 
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER */
 
 .site-header {
   position: fixed;
@@ -134,9 +131,9 @@ img {
 
 .brand-name strong {
   font-family: var(--heading-font);
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1;
   white-space: nowrap;
 }
 
@@ -178,9 +175,7 @@ img {
   cursor: pointer;
 }
 
-/* =========================================
-   HERO
-========================================= */
+/* HERO */
 
 .hero {
   position: relative;
@@ -247,9 +242,7 @@ img {
   margin-top: 30px;
 }
 
-/* =========================================
-   BUTTONS
-========================================= */
+/* BUTTONS */
 
 .button {
   display: inline-flex;
@@ -263,9 +256,7 @@ img {
   border: 1px solid transparent;
   cursor: pointer;
   font-size: 14px;
-  transition:
-    background 0.2s ease,
-    transform 0.2s ease;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .button:hover {
@@ -287,9 +278,7 @@ img {
   border-color: var(--sand);
 }
 
-/* =========================================
-   GENERAL SECTIONS
-========================================= */
+/* GENERAL SECTIONS */
 
 .section {
   padding: var(--section-spacing) 7%;
@@ -338,9 +327,7 @@ img {
   object-fit: cover;
 }
 
-/* =========================================
-   HEADSHOT
-========================================= */
+/* HEADSHOT */
 
 .headshot-wrap {
   width: 70%;
@@ -363,13 +350,11 @@ img {
   text-align: center;
   color: var(--ocean-dark);
   font-family: var(--heading-font);
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 500;
 }
 
-/* =========================================
-   SERVICES & EXPECTATIONS
-========================================= */
+/* SERVICES */
 
 .services-section {
   background: var(--cream);
@@ -377,8 +362,7 @@ img {
 
 .expect-section {
   background: var(--seafoam);
-  padding-top: 56px;
-  padding-bottom: 48px;
+  padding-bottom: 65px;
 }
 
 .cards {
@@ -389,14 +373,12 @@ img {
 }
 
 .card {
-  min-height: 0;
+  min-width: 0;
   padding: 28px 29px;
   border: 1px solid var(--sand);
   border-radius: 14px;
   background: var(--white);
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
@@ -407,9 +389,9 @@ img {
 .card h3 {
   margin-bottom: 10px;
   font-family: var(--heading-font);
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .card p {
@@ -422,16 +404,73 @@ img {
   padding: 27px;
 }
 
-/* =========================================
-   APPROACH
-========================================= */
+/* COUPLES & PREMARITAL COUNSELING */
+
+.couples-card {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 55px;
+  align-items: start;
+  padding: 42px 46px;
+  background: var(--white);
+  border-top: 3px solid var(--ocean);
+}
+
+.couples-card h3 {
+  font-size: clamp(29px, 3vw, 39px);
+  margin-bottom: 18px;
+  color: var(--forest);
+}
+
+.couples-intro p {
+  max-width: 490px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.couples-topics-heading {
+  margin: 0 0 18px !important;
+  color: var(--ocean-dark);
+  font-size: 14px !important;
+  font-weight: 700;
+}
+
+.couples-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 28px;
+  row-gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.couples-list li {
+  position: relative;
+  padding-left: 21px;
+  color: var(--muted);
+  font-family: var(--body-font);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.couples-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--ocean-dark);
+  font-weight: 700;
+}
+
+/* APPROACH */
 
 .approach {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  justify-content: center;
+  padding: 55px 7%;
   background:
     linear-gradient(
       rgba(220, 233, 229, 0.78),
@@ -444,12 +483,12 @@ img {
 
 .approach-box {
   width: 100%;
-  max-width: 940px;
+  max-width: 1000px;
   margin: 0 auto;
   background: rgba(255, 250, 244, 0.96);
   border: 1px solid var(--sand);
   border-radius: 18px;
-  padding: 42px;
+  padding: 45px 55px;
 }
 
 .approach-box h2 {
@@ -460,9 +499,7 @@ img {
   margin-bottom: 0;
 }
 
-/* =========================================
-   INSURANCE
-========================================= */
+/* INSURANCE */
 
 .insurance-section {
   background: var(--white);
@@ -499,7 +536,7 @@ img {
   margin: 0;
   color: var(--ocean-dark);
   font-size: clamp(25px, 2.5vw, 34px);
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 .insurance-note {
@@ -518,9 +555,11 @@ img {
   padding-bottom: 5px;
 }
 
-/* =========================================
-   LOCATION
-========================================= */
+.text-link:hover {
+  color: var(--forest);
+}
+
+/* LOCATION */
 
 .location-grid .image-card img {
   max-height: 520px;
@@ -530,17 +569,35 @@ img {
   max-width: 560px;
 }
 
-/* =========================================
-   CONTACT
-========================================= */
+.ict-branding {
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid var(--sand);
+}
+
+.ict-label {
+  margin: 0 0 12px;
+  color: var(--ocean-dark);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.ict-branding img {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* CONTACT */
 
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 66px;
-  padding-bottom: 66px;
   background:
     linear-gradient(
       rgba(220, 233, 229, 0.92),
@@ -558,11 +615,7 @@ img {
   margin-right: auto;
 }
 
-.contact > .eyebrow {
-  width: 100%;
-}
-
-.contact p {
+.contact > p:not(.eyebrow) {
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
@@ -571,10 +624,10 @@ img {
 .contact-details {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: 25px;
   align-items: center;
+  gap: 10px;
   width: 100%;
+  margin-top: 25px;
 }
 
 .contact-details a {
@@ -588,9 +641,7 @@ img {
   text-decoration: underline;
 }
 
-/* =========================================
-   FOOTER
-========================================= */
+/* FOOTER */
 
 .footer {
   padding: 40px 7%;
@@ -606,7 +657,7 @@ img {
 
 .footer-brand {
   font-family: var(--heading-font);
-  font-size: 27px !important;
+  font-size: 30px !important;
   font-weight: 500;
   margin-bottom: 13px !important;
 }
@@ -635,9 +686,7 @@ img {
   color: white;
 }
 
-/* =========================================
-   RESPONSIVE
-========================================= */
+/* TABLET */
 
 @media (max-width: 1150px) {
   .site-header {
@@ -725,20 +774,23 @@ img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .approach-box {
+  .couples-card {
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr;
+    gap: 25px;
     padding: 35px;
   }
 
-  .expect-section {
-    padding-top: 55px;
-    padding-bottom: 45px;
+  .approach {
+    padding: 45px 20px;
   }
 
-  .approach {
-    padding-top: 42px;
-    padding-bottom: 42px;
+  .approach-box {
+    padding: 35px;
   }
 }
+
+/* MOBILE */
 
 @media (max-width: 600px) {
   :root {
@@ -764,12 +816,12 @@ img {
   }
 
   h1 {
-    font-size: clamp(47px, 11vw, 65px);
+    font-size: clamp(44px, 11vw, 65px);
     letter-spacing: -0.02em;
   }
 
   h2 {
-    font-size: clamp(39px, 9vw, 49px);
+    font-size: clamp(34px, 9vw, 49px);
   }
 
   p {
@@ -808,7 +860,27 @@ img {
   }
 
   .card h3 {
-    font-size: 28px;
+    font-size: 27px;
+  }
+
+  .couples-card {
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 29px 25px;
+  }
+
+  .couples-card h3 {
+    font-size: 30px;
+  }
+
+  .couples-list {
+    grid-template-columns: 1fr;
+    row-gap: 13px;
+  }
+
+  .couples-list li {
+    font-size: 14px;
   }
 
   .headshot-wrap {
@@ -824,20 +896,16 @@ img {
     margin-bottom: 15px;
   }
 
-  .approach-box {
-    padding: 26px;
-  }
-
   .approach {
-    padding: 32px 20px;
+    padding: 35px 20px;
   }
 
-  .expect-section {
-    padding: 46px 20px 38px;
+  .approach-box {
+    padding: 30px 25px;
   }
 
-  .contact {
-    padding: 50px 20px;
+  .contact h2 {
+    max-width: 100%;
   }
 
   .contact-details a {
@@ -845,6 +913,8 @@ img {
     overflow-wrap: anywhere;
   }
 }
+
+/* ACCESSIBILITY */
 
 @media (prefers-reduced-motion: reduce) {
   html {
